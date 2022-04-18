@@ -1,0 +1,19 @@
+//variables globales
+$mainColor: black;
+$secondaryColor: #1e1e1e;
+$keyColor: #ffffff;
+
+//map
+$paleta:(
+    'uno': $mainColor,
+    'dos': $secondaryColor,
+    'tres':$keyColor,
+    'cuatro':red,
+    'cinco': blue,
+);
+
+//sizing
+$w-100: 100%;
+$w-75: 75%;
+$w-50: 50%;
+$w-25: 25%;

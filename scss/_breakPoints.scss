@@ -1,0 +1,77 @@
+/*GRID*/
+/*--------------------------------------------*/
+/*le damos nombres a las areas del layout*/
+header{
+	grid-area: header;
+}
+#biografia{
+	grid-area: biografia;
+}
+#fotosBiografia{
+	grid-area: fotosBiografia;
+}
+footer{
+	grid-area: footer;
+}
+/*definimos el grid layout - 1 col y 4 rows*/
+.contenedorLateral{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header" "biografia" "fotosBiografia" "footer";
+}
+/* media queries*/
+@media (min-width: 768px){
+	/* definimos 2cols y 3 rows */
+	.contenedorLateral{
+    display: grid;
+		grid-template-columns: 70% 30%;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "header header" "biografia fotosBiografia" "footer footer";
+	}
+  #fotosBiografia{
+    display: flex;
+		flex-direction: column;
+		align-items:center;
+    /*border: #ffffff solid 1px;*/
+    width: 90%;
+  } 
+  #fotosBiografia figure{
+    width: 100%;
+  }
+  .galeriaFotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .fotosVideos{
+    width: 45%;
+  }
+}
+@media (min-width: 1024px){
+  /* cambio la dirección de la botonera a row*/
+  .encabezado nav{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
+    .encabezado nav ol{
+      flex-direction: row;
+      justify-content:space-between;
+    }
+  .galeriaVideos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .novedades article{
+    width: 70%;
+  }
+  /*Animations - scale fotos*/
+  .scale:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+    transition: transform 2s;
+  }
+}

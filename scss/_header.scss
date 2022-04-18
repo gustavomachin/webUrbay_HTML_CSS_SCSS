@@ -1,0 +1,21 @@
+
+/*encabezado*/
+.encabezado nav a img {
+  width: 130px;
+}
+
+#botonera {
+  background-color: map-get($map: $paleta, $key: 'dos');
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+//extend
+#submenu {
+  @extend #botonera;
+  font-size: 1.6rem;
+}
+
+.encabezadoImg {
+  width: 100%;
+}

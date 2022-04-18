@@ -1,0 +1,32 @@
+/*footer*/
+/*--------------------------------------------*/
+.pie {
+    width: 100%;
+    background-color: $keyColor;
+    /*display flex*/
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    .pie a {
+        text-decoration: none;
+    }
+}
+
+//mixins
+@mixin mediaIcons($color) {
+    width: 50px;
+    margin: 0 10px;
+    color: map-get($map: $paleta, $key: 'dos');
+    &:hover{
+        color: $color;
+    }
+}
+.pieIconYouTube{
+    @include mediaIcons(map-get($map: $paleta, $key: 'cuatro'))
+}
+.pieIconFace {
+    @include mediaIcons(map-get($map: $paleta, $key: 'cinco'))
+}
+/*--------------------------------------------*/

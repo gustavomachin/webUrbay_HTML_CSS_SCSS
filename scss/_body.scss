@@ -1,0 +1,175 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%; /*root*/
+  }
+  
+  body {
+    background-color: #1e1e1e;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  h2 {
+    font-size: 3rem;
+    font-family: "Barlow Condensed", sans-serif; 
+  }
+  
+  p {
+    line-height: 2rem;
+    font-size: 1.6rem; /*equivale a 16px*/
+  }
+
+  /*Títulos y subtítulos*/
+  .titulos, .subtitulos{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /*biografía*/
+  /*--------------------------------------------*/
+  .sobreUrbay {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+    .sobreUrbay ul {
+      color: black;
+      line-height: 2rem;
+      font-size: 1.6rem;
+    }
+  /*--------------------------------------------*/
+
+  /*formulario de contacto*/
+/*--------------------------------------------*/
+.formulario{
+    color: white;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 30px;
+  }
+  /*--------------------------------------------*/
+  
+  /*tablas grabaciones*/
+  /*--------------------------------------------*/
+  .tablaGrabaciones{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 60%;
+  }
+    .tablaGrabaciones th{
+      border: 1px solid white;
+      background-color: #ffffff;
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+  
+    }
+    .tablaGrabaciones td{
+      border: 1px solid white;
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-family: "Montserrat", sans-serif;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    #discosGramatges{
+      background-color: #1e1e1e;
+      color: white;
+      font-size: 1.3rem;
+    }
+  /*--------------------------------------------*/
+  
+  /*Fotos y videos*/
+  /*--------------------------------------------*/
+  
+  .fotosVideos{
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+    .fotosVideos img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .fotosVideos iframe{
+      width: 100%;
+      height: auto;
+    }
+    .fotosVideos h3, .fotosVideos p{ 
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  /*--------------------------------------------*/
+  
+  /*Novedades index*/
+  /*--------------------------------------------*/
+  .novedades article{
+    width: 90%;
+    height: 30%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 1.6rem;
+  }
+  .novedades img{
+    width: 100%;
+    height: auto;
+  }
+  /*--------------------------------------------*/
+  
+  /*Fotos biografía Mobile*/
+  /*--------------------------------------------*/
+  #fotosBiografia{
+    margin: 10px 0;
+    /*display: flex;*/
+  }
+    #fotosBiografia figure{
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+      #fotosBiografia figure img{
+        border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              width: 100%;
+      }
+      #fotosBiografia figure figcaption{
+        font-size: 1.6rem;
+        font-family: "Montserrat", sans-serif;
+              color: #ffffff;
+              padding: 10px 0;
+              text-align: center;
+      }
+  /*--------------------------------------------*/

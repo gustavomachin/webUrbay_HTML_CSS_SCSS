@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Montserrat:wght@300;400;500&display=swap");
+/*encabezado*/
+.encabezado nav a img {
+  width: 130px; }
+
+#botonera, #submenu {
+  background-color: #1e1e1e;
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif; }
+
+#submenu {
+  font-size: 1.6rem; }
+
+.encabezadoImg {
+  width: 100%; }
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  /*root*/ }
+
+body {
+  background-color: #1e1e1e; }
+
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: "Barlow Condensed", sans-serif; }
+
+h2 {
+  font-size: 3rem;
+  font-family: "Barlow Condensed", sans-serif; }
+
+p {
+  line-height: 2rem;
+  font-size: 1.6rem;
+  /*equivale a 16px*/ }
+
+/*Títulos y subtítulos*/
+.titulos, .subtitulos {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  text-align: center;
+  color: #ffffff; }
+
+/*biografía*/
+/*--------------------------------------------*/
+.sobreUrbay {
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  background-color: #ffffff; }
+
+.sobreUrbay ul {
+  color: black;
+  line-height: 2rem;
+  font-size: 1.6rem; }
+
+/*--------------------------------------------*/
+/*formulario de contacto*/
+/*--------------------------------------------*/
+.formulario {
+  color: white;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 30px; }
+
+/*--------------------------------------------*/
+/*tablas grabaciones*/
+/*--------------------------------------------*/
+.tablaGrabaciones {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 60%; }
+
+.tablaGrabaciones th {
+  border: 1px solid white;
+  background-color: #ffffff;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.tablaGrabaciones td {
+  border: 1px solid white;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+#discosGramatges {
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 1.3rem; }
+
+/*--------------------------------------------*/
+/*Fotos y videos*/
+/*--------------------------------------------*/
+.fotosVideos {
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  background-color: #ffffff; }
+
+.fotosVideos img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; }
+
+.fotosVideos iframe {
+  width: 100%;
+  height: auto; }
+
+.fotosVideos h3, .fotosVideos p {
+  font-size: 1.6rem;
+  text-align: center; }
+
+/*--------------------------------------------*/
+/*Novedades index*/
+/*--------------------------------------------*/
+.novedades article {
+  width: 90%;
+  height: 30%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 1.6rem; }
+
+.novedades img {
+  width: 100%;
+  height: auto; }
+
+/*--------------------------------------------*/
+/*Fotos biografía Mobile*/
+/*--------------------------------------------*/
+#fotosBiografia {
+  margin: 10px 0;
+  /*display: flex;*/ }
+
+#fotosBiografia figure {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+#fotosBiografia figure img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%; }
+
+#fotosBiografia figure figcaption {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center; }
+
+/*--------------------------------------------*/
+/*footer*/
+/*--------------------------------------------*/
+.pie {
+  width: 100%;
+  background-color: #ffffff;
+  /*display flex*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0; }
+  .pie .pie a {
+    text-decoration: none; }
+
+.pieIconYouTube {
+  width: 50px;
+  margin: 0 10px;
+  color: #1e1e1e; }
+  .pieIconYouTube:hover {
+    color: red; }
+
+.pieIconFace {
+  width: 50px;
+  margin: 0 10px;
+  color: #1e1e1e; }
+  .pieIconFace:hover {
+    color: blue; }
+
+/*--------------------------------------------*/
+/*GRID*/
+/*--------------------------------------------*/
+/*le damos nombres a las areas del layout*/
+header {
+  grid-area: header; }
+
+#biografia {
+  grid-area: biografia; }
+
+#fotosBiografia {
+  grid-area: fotosBiografia; }
+
+footer {
+  grid-area: footer; }
+
+/*definimos el grid layout - 1 col y 4 rows*/
+.contenedorLateral {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header" "biografia" "fotosBiografia" "footer"; }
+
+/* media queries*/
+@media (min-width: 768px) {
+  /* definimos 2cols y 3 rows */
+  .contenedorLateral {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header" "biografia fotosBiografia" "footer footer"; }
+  #fotosBiografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: #ffffff solid 1px;*/
+    width: 90%; }
+  #fotosBiografia figure {
+    width: 100%; }
+  .galeriaFotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .fotosVideos {
+    width: 45%; } }
+
+@media (min-width: 1024px) {
+  /* cambio la dirección de la botonera a row*/
+  .encabezado nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5%; }
+  .encabezado nav ol {
+    flex-direction: row;
+    justify-content: space-between; }
+  .galeriaVideos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .novedades article {
+    width: 70%; }
+  /*Animations - scale fotos*/
+  .scale:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+    transition: transform 2s; } }
