@@ -1,0 +1,9 @@
+En los archivos html de todas las páginas, sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Roberto Antonio Urbay es pianista concertista y profesor cubano".
+
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "Roberto, Urbay, pianista, concertista, profesor, cubano, Gramatges, piano"
+
+Encabezado: los encabezados hacen referencia a Roberto Urbay y el piano, así como su repertorio.
+
+El contenido de los html son coherentes con los metadatos para posicionamiento en Google. 
